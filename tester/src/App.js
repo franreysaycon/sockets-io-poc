@@ -32,7 +32,7 @@ function App() {
     setUsername(usernameRef.current.value)
     socket.emit('login', username)
   }
-  console.log(strategies)
+
   const toggleStrategy = (strat) => {
     let newStrategies = strategies
 
