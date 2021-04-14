@@ -56,6 +56,7 @@ function App() {
           <button onClick={submitUsername}>Submit</button>
         </div> :
           <div>
+            <h3>Logged in as {username}</h3>
             <div style={{ display: "flex", flexDirection: 'column' }}>
               <span><input type="checkbox" checked={!!strategies.find(st => st === 1)} onChange={() => toggleStrategy(1)} />Strategy 1</span>
               <span><input type="checkbox" checked={!!strategies.find(st => st === 2)} onChange={() => toggleStrategy(2)} />Strategy 2</span>
